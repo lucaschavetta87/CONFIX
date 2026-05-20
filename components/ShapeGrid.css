@@ -1,0 +1,11 @@
+.shapegrid-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Esto es vital para que esté al fondo */
+  background-color: #000; /* Fondo negro base */
+  display: block;
+  pointer-events: none; /* Permite que puedas hacer clic en los botones de arriba */
+}
