@@ -462,9 +462,8 @@ export default function ConfixWeb() {
             <div style={{ marginTop: '80px', textAlign: 'center' }}>
               <h2 style={{ fontSize: '1.8rem', fontWeight: '900', marginBottom: '40px', letterSpacing: '3px', color: '#fff', WebkitTextStroke: '1px #000', textTransform: 'uppercase' }}>DÓNDE NOS ENCONTRAMOS</h2>
               <div style={{ backgroundColor: 'rgba(10, 10, 10, 0.85)', backdropFilter: 'blur(12px)', padding: '20px', borderRadius: '35px', border: '1px solid #222', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.123456789!2d-68.835!3d-32.885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDUzJzI0LjAiUyA2OMKwNTAnMDYuMCJX!5e0!3m2!1ses!2sar!4v1713712345678" width="100%" height="450" style={{ border: 0, borderRadius: '20px' }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://maps.google.com/maps?q=Catamarca+42,+Mendoza,+Argentina&z=18&output=embed" width="100%" height="450" style={{ border: 0, borderRadius: '20px' }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 <div style={{ marginTop: '20px', opacity: 0.8 }}>
-                  <p>📍 San Juan 1165, Mendoza, Argentina</p>
                   <p>📍 Catamarca 42, Mendoza, Argentina</p>
                 </div>
               </div>
