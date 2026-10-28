@@ -123,7 +123,7 @@ export default function ConfixWeb() {
   };
 
   const enviarWhatsApp = (msg: string) => {
-    window.open(`https://wa.me/2612194199?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/2616823890?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
   const cuatrimestreRepuestoWhatsApp = (e: React.FormEvent) => {
