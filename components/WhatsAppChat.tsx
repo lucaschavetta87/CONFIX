@@ -32,7 +32,7 @@ export default function WhatsAppChat() {
   ];
 
   const irAWhatsApp = (mensaje: string) => {
-    const nro = "5492613732989";
+    const nro = "5492616823890";
     const url = `https://wa.me/${nro}?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
   };
