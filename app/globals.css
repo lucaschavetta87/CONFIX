@@ -1,11 +1,101 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  /* Base clara estilo publicación JW */
+  --color-fondo: #ffffff;
+  --color-tarjeta: #ffffff;
+  --color-tarjeta2: #f7f7f7;
+  --color-gris: #f1f1f1;
+  --color-linea: #e4e4e4;
+  --color-borde: #a7a7a7;
+  --color-texto: #292929;
+  --color-suave: #626262;
+
+  /* Colores de sección (iguales a la guía) */
+  --color-teal: #2a6b77;
+  --color-teal2: #3c7f8b;
+  --color-gold: #9b6d17;
+  --color-gold2: #d68f00;
+  --color-maroon: #942926;
+  --color-maroon2: #bf2f13;
+
+  --color-rojo: #b3261e;
+  --color-verde: #1c7a4a;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #000000;
-  color: white;
-  font-family: sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  min-height: 100%;
 }
 
 * {
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-gris);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-borde);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-suave);
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
+/* ---------- Impresión / PDF ---------- */
+
+@page {
+  size: A4;
+  margin: 14mm;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .contenedor {
+    padding-left: 0 !important;
+  }
+
+  html,
+  body {
+    background: #ffffff;
+    font-size: 11px;
+  }
+
+  .pagina-pdf {
+    padding: 0 !important;
+    max-width: none !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    box-shadow: none !important;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
